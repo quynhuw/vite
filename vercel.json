@@ -1,3 +1,4 @@
 {
+  "_comment": "prevent 404 errors on missing pages",
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
