@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color-scheme: light dark;
+  @apply text-black;
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.active .category {
+  @apply font-semibold text-gray-900;
+}
+@keyframes update-form-open {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes update-form-close {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+@keyframes film-form-open {
+  from {
+    transform: translateY(-200px);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes film-form-close {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+#search::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+@keyframes go-up {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url("./assets/images/calendar.png") no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg)
+    no-repeat 50% 50%;
+  background-size: contain;
+  pointer-events: none;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+  opacity: 0.7;
+  pointer-events: all;
+}
