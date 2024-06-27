@@ -58,7 +58,7 @@ const BookingHistory = () => {
                 />
               </div>
               <div>
-                {bookingHistories[index].tickets[0].showTime?.movie?.nameVn}
+                {bookingHistories[index].tickets[0]?.showTime?.movie?.nameVn}
               </div>
             </div>
             <div className="w-full border border-dashed border-secondary"></div>

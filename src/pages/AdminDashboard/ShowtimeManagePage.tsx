@@ -228,7 +228,7 @@ const ShowtimesManagePage = () => {
   };
   return (
     <div className={`flex flex-col w-full gap-2 p-2 rounded shadow-sm `}>
-      <div className="">
+      <div className="hidden">
         <input
           onChange={(e) => handleChangeImg(e)}
           type="file"
@@ -320,7 +320,7 @@ const ShowtimesManagePage = () => {
             </div>
             <div className="flex justify-end gap-2">
               <button
-                onClick={() => handleOpenModal()}
+                onClick={() => setOpenModal(false)}
                 className="px-5 py-2 bg-white rounded-2xl hover:bg-gray-200"
               >
                 Huỷ
